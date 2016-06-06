@@ -5,7 +5,7 @@ Home: http://github.com/craigds/django-typed-models
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Sane single table model inheritance for Django
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-typed-models-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/django-typed-models-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-typed-models-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-typed-models-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-typed-models-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-typed-models-feedstock/branch/master)
