@@ -1,22 +1,22 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: django-typed-models
   version: {{ version }}
 
 source:
-  fn: django-typed-models-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/django-typed-models/django-typed-models-{{ version }}.tar.gz
-  sha256: 21409c384a1705bf3998e7ad128b4f715c909d5dbd3dd98ee79a9aca32058916
+  sha256: 58c451c465ac1c20edd159bb5fa5e90693cc3157cc66898906e88a2ba25d7572
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - setuptools
