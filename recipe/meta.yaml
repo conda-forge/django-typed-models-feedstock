@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: django-typed-models
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-typed-models/django-typed-models-{{ version }}.tar.gz
-  sha256: 39723d0476a1b058fae45806a5b8b5bccd21de7236d4f8b8bbcad4ccb5330fad
+  sha256: 0682c87e5887124d4990f851d73e172103828e8b48ad2ce53ae039b1498cedb6
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -30,7 +30,7 @@ about:
   home: http://github.com/craigds/django-typed-models
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: 'Sane single table model inheritance for Django.'
+  summary: Sane single table model inheritance for Django.
 
 extra:
   recipe-maintainers:
