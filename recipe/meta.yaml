@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: django-typed-models
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-typed-models/django-typed-models-{{ version }}.tar.gz
-  sha256: 0682c87e5887124d4990f851d73e172103828e8b48ad2ce53ae039b1498cedb6
+  sha256: ca436bed4c0d886f78cd0085ec97aa05f81cd8f2e699e738a05d3f2676a13302
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
