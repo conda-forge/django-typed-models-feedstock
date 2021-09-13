@@ -3,11 +3,11 @@ About django-typed-models
 
 Home: http://github.com/craigds/django-typed-models
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-typed-models-feedstock/blob/master/LICENSE.txt)
 
-Summary: Sane single table model inheritance for Django.
+Summary: Sane single table model inheritance for Django
 
 Current build status
 ====================
