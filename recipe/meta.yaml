@@ -1,5 +1,5 @@
 {% set name = "django-typed-models" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-typed-models-{{ version }}.tar.gz
-  sha256: 0fe393dcc9e219024bf7fdc23cb9f3fafe1311dcd8fcf3f156bb97410d1f99e7
+  sha256: 8e17a6efa8a218d00de4d988c3dbee5377f82f8115f11961594746ba343e3b6f
 
 build:
   number: 0
