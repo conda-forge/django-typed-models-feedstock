@@ -3,7 +3,7 @@ About django-typed-models-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-typed-models-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/craigds/django-typed-models
+Home: https://github.com/craigds/django-typed-models
 
 Package license: BSD-3-Clause
 
