@@ -1,5 +1,5 @@
 {% set name = "django-typed-models" %}
-{% set version = "0.14.0" %}
+{% set version = "0.16.0" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django-typed-models-{{ version }}.tar.gz
-  sha256: 1d374f9fc3c7aedcfbaada9200c0b489c3d2262c275a499141c2dcfc7472a5b7
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 53a2250748034a38843ad98db9a122890f8a6069ba7c0d6a2c920a3801ee282e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -21,8 +21,10 @@ requirements:
     - setuptools
     - pip
   run:
+    - django-stubs-ext
+    - typing_extensions
     - python >={{ python_min }}
-    - django
+    - django >=5.2
     - setuptools
 
 test:
