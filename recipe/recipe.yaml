@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.16.2
+  version: "0.17.0"
 
 package:
   name: django-typed-models
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/django-typed-models/django_typed_models-${{ version }}.tar.gz
-  sha256: 3e76d2d067052aa8b6436b42dfe7773d5793477e1d8c192130c6aad76a346795
+  sha256: 25fe78ac54af62f63bc88996122ae9bd1534d420e99859fc759e345eaa60d911
 
 build:
   number: 0
